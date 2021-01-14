@@ -7,21 +7,21 @@
 			body {margin: 0;}
 			iframe {border: 0;}
 		</style>
-		<script type="text/javascript">
-			var weekday = new Array(7);
-			weekday[0] = "dimanche";
-			weekday[1] = "lundi";
-			weekday[2] = "mardi";
-			weekday[3] = "mercredi";
-			weekday[4] = "jeudi";
-			weekday[5] = "vendredi";
-			weekday[6] = "samedi";
-			var id = new Date().getDay();
-			var url = "http://auc-ign.info/menus/menu-du-" + weekday[id];
-			document.getElementById('auc').src = url;
-		</script>
 	</head>
 	<body>
 		<iframe id="auc" src="about:blank" frameborder="0"></iframe>
 	</body>
+	<script type="text/javascript">
+		var weekday = new Array(7);
+		weekday[0] = "dimanche";
+		weekday[1] = "lundi";
+		weekday[2] = "mardi";
+		weekday[3] = "mercredi";
+		weekday[4] = "jeudi";
+		weekday[5] = "vendredi";
+		weekday[6] = "samedi";
+		var id = new Date().getDay();
+		var url = "http://auc-ign.info/menus/menu-du-" + weekday[id];
+		document.getElementById('auc').src = url;
+	</script>
 </html>
